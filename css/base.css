@@ -1,0 +1,24 @@
+/* ================================
+   RESET & BASE
+================================ */
+@import url('./normalize.css');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding-top: 60px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all var(--transition-speed);
+}
+
+a:hover {
+  color: var(--text-color);
+}
