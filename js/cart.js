@@ -1,6 +1,11 @@
 // cart.js
 import { state } from './state.js';
 
+export function updateCartUI() {
+    const count = document.querySelector(".cart-count");
+    if (count) count.textContent = state.cart.length;
+}
+
 export function addToCart(name, price) {
     const parsedPrice = Number(price) || 0;
 
@@ -9,7 +14,7 @@ export function addToCart(name, price) {
         price: parsedPrice
     });
 
-    updateCartUI?.(); // safe call
+    updateCartUI();
 }
 
 export function orderWhatsApp() {
@@ -24,8 +29,8 @@ export function orderWhatsApp() {
     }).join("\n");
 
     const message = encodeURIComponent(
-`Bonjour PAULYON ! 👋
-Je souhaite commander :
+`Bonjour 👋
+Commande :
 
 ${items}
 
