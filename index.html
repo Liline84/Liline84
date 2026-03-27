@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PAULYON Lab Hub | Transformation numérique</title>
+
+  <meta name="description" content="PAULYON Lab Hub : produits, services et transformation numérique.">
+  <meta name="keywords" content="PAULYON, Haïti, produits, services, technologie">
+  <meta name="author" content="PAULYON">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" href="assets/img/favicon.png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/forme.css">
+  <link rel="stylesheet" href="css/produits.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+<!-- OVERLAY -->
+<div id="overlay"></div>
+
+<!-- ================= HEADER (SIDEBAR + NAV) ================= -->
+<aside class="sidebar" id="sidebar">
+
+  <div class="sidebar-header">
+    <h1 class="site-logo">
+      <a href="index.html">PAULYON</a>
+    </h1>
+  </div>
+
+  <nav class="sidebar-nav">
+
+    <a href="index.html" class="nav-item">
+      <i class="fa-solid fa-house"></i>
+      <span>Accueil</span>
+    </a>
+
+    <div class="nav-label">Boutique</div>
+
+    <a href="produits.html" class="nav-item">
+      <i class="fa-solid fa-box-open"></i>
+      <span>Produits</span>
+    </a>
+
+    <a href="services.html" class="nav-item">
+      <i class="fa-solid fa-hand-holding-heart"></i>
+      <span>Services</span>
+    </a>
+
+    <div class="nav-label">Contact</div>
+
+    <a href="contact.html" class="nav-item">
+      <i class="fa-solid fa-envelope"></i>
+      <span>Contact</span>
+    </a>
+
+    <a href="parametres.html" class="nav-item">
+      <i class="fa-solid fa-gear"></i>
+      <span>Paramètres</span>
+    </a>
+
+  </nav>
+
+  <div class="sidebar-footer">
+    <span class="version-badge">v1.0.0</span>
+  </div>
+
+</aside>
+
+<nav id="main-nav" class="nav-menu">
+  <ul class="nav-list">
+    <li><a href="#accueil" class="nav-link"><i class="fa-solid fa-house"></i> Accueil</a></li>
+    <li><a href="#products-section" class="nav-link"><i class="fa-solid fa-box"></i> Produits</a></li>
+    <li><a href="#services-section" class="nav-link"><i class="fa-solid fa-gears"></i> Services</a></li>
+
+    <li class="dropdown">
+      <a href="#" class="nav-link dropdown-toggle">
+        <i class="fa-solid fa-sliders"></i> Paramètres
+      </a>
+      <ul class="dropdown-content">
+        <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
+        <li><a href="#" onclick="changeLanguage('ht')">Kreyòl</a></li>
+        <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#contact-section" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ================= MAIN ================= -->
+<main class="main-content">
+
+  <header class="topbar">
+
+    <button class="hamburger" id="hamburger-btn">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <a href="cart.html" class="cart-icon">
+      <i class="fa-solid fa-shopping-cart"></i>
+      <span class="cart-count">0</span>
+    </a>
+
+  </header>
+
+  <!-- HERO -->
+  <section id="accueil" class="hero-section">
+    <h1>Bienvenue sur PAULYON</h1>
+    <p>Transformation numérique & solutions innovantes</p>
+  </section>
+
+  <!-- PRODUITS -->
+  <section id="products-section" class="content-section">
+    <h2>Nos Produits</h2>
+    <div class="cards-container products-grid"></div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services-section" class="content-section">
+    <h2>Nos Services</h2>
+    <div class="cards-container services-grid"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact-section" class="content-section">
+    <h2>Contact</h2>
+    <div class="contact-methods"></div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+
+  <div class="footer-content">
+
+    <div class="footer-col">
+      <h4>À Propos de PAULYON</h4>
+      <p>
+        PAULYON est votre partenaire pour la transformation numérique et la création de produits sur mesure.
+      </p>
+
+      <div class="footer-bottom">
+        <p>© 2026 PAULYON. Tous droits réservés.</p>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Liens Rapides</h4>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#products-section">Produits</a></li>
+        <li><a href="#services-section">Services</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col contact-info">
+
+      <h4>Nous Contacter</h4>
+
+      <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:contact.paulyon@gmail.com">contact.paulyon@gmail.com</a>
+      </p>
+
+      <p>
+        <i class="fab fa-whatsapp"></i>
+        <a href="https://wa.me/50941172815" target="_blank">+509 4117 2815</a>
+      </p>
+
+      <p>
+        <i class="fas fa-map-marker-alt"></i>
+        <a href="https://www.google.com/maps/search/?api=1&query=Cap-Haïtien,Haiti" target="_blank">
+          Cap-Haïtien, Haïti
+        </a>
+      </p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- JS -->
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>
