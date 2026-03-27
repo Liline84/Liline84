@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | PAULYON</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/forme.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER (copié comme index) -->
+<div id="header-container"></div>
+
+<main class="main-content">
+
+<section class="content-section">
+  <h2>Contactez-nous</h2>
+
+  <p>
+    Email :
+    <a href="mailto:contact.paulyon@gmail.com">contact.paulyon@gmail.com</a>
+  </p>
+
+  <p>
+    WhatsApp :
+    <a href="https://wa.me/50941172815">+509 4117 2815</a>
+  </p>
+
+  <form action="https://formspree.io/f/TON_ID_FORMSPREE" method="POST">
+
+    <input type="text" name="name" placeholder="Nom" required>
+    <input type="email" name="_replyto" placeholder="Email" required>
+    <textarea name="message" placeholder="Message" required></textarea>
+
+    <button type="submit">Envoyer</button>
+
+  </form>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<div id="footer-container"></div>
+
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>
